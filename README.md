@@ -16,3 +16,9 @@ Proyek digitalisasi birokrasi tingkat akar rumput di jaringan Shelbynet.
 
 ### 📄 Dokumentasi
 Baca selengkapnya di [Whitepaper Kampung Web3](./WHITEPAPER.md)
+
+## 🌾 Latest Update: V11 - Harvest Registry System (Manajemen Panen)
+We have successfully integrated the local agricultural economy into the blockchain!
+- **Module Address**: 0x23adb5190b461f2821b3cafef93249837961a2c461fd103e94dd365f11bdb0b1::manajemen_panen
+- **Features**: Digital harvest registration, immutable proof-of-production for farmers, and transparent village food security monitoring.
+- **Status**: Deployed and Verified on Shelbynet.
