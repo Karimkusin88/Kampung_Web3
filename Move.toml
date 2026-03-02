@@ -1,15 +1,9 @@
 [package]
-name = "KampungWeb3V10"
-version = "1.0.0"
-authors = []
+name = "kampung_aktif_harian"
+version = "0.0.1"
 
 [addresses]
+kampung_account = "_"
 
-[dev-addresses]
-
-[dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-framework.git"
-rev = "mainnet"
-subdir = "aptos-framework"
-
-[dev-dependencies]
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "main", subdir = "aptos-move/framework/aptos-framework" }
