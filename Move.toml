@@ -1,9 +1,15 @@
 [package]
-name = "kampung_aktif_harian"
-version = "0.0.1"
+name = "KampungWeb3"
+version = "1.0.0"
+authors = []
 
 [addresses]
-kampung_account = "_"
+kampung = "0x23adb5190b461f2821b3cafef93249837961a2c461fd103e94dd365f11bdb0b1"
 
-[dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "main", subdir = "aptos-move/framework/aptos-framework" }
+[dev-addresses]
+kampung = "0x23adb5190b461f2821b3cafef93249837961a2c461fd103e94dd365f11bdb0b1"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"

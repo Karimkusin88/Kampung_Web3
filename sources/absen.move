@@ -1,4 +1,4 @@
-module kampung_account::ping_v1 {
+module kampung::absen {
     use std::signer;
     use aptos_framework::timestamp;
 
@@ -8,10 +8,14 @@ module kampung_account::ping_v1 {
         let addr = signer::address_of(account);
         let skrg = timestamp::now_seconds();
         if (exists<Status>(addr)) {
-            let s = borrow_global_mut<Status>(addr);
-            s.terakhir_ping = skrg;
+            borrow_global_mut<Status>(addr).terakhir_ping = skrg;
         } else {
             move_to(account, Status { terakhir_ping: skrg });
         }
+    }
+
+    #[view]
+    public fun terakhir_absen(addr: address): u64 acquires Status {
+        borrow_global<Status>(addr).terakhir_ping
     }
 }
